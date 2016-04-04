@@ -1,5 +1,7 @@
 import {Page} from 'ionic-angular';
 import {HelloIonicPage} from '../hello-ionic/hello-ionic';
+import {LoginPage} from '../login/login';
+import {ListPage} from '../list/list';
 
 import {Type} from 'angular2/core';
 
@@ -9,8 +11,8 @@ import {Type} from 'angular2/core';
 export class TabsPage {
 
   tab1Root: any = HelloIonicPage;
-  tab2Root: any = HelloIonicPage;
-  //tab3Root: Type = HelloIonicPage;
+  tab2Root: any = LoginPage;
+  tab3Root: Type = ListPage;
 
   constructor() {
 

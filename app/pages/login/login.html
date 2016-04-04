@@ -1,0 +1,86 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title></ion-title>
+</ion-navbar>
+
+<ion-toolbar [attr.primary]="isAndroid ? '' : null" >
+  <ion-segment [(ngModel)]="user" [attr.light]="isAndroid ? '' : null">
+    <ion-segment-button value="login">
+      Login
+    </ion-segment-button>
+    <ion-segment-button value="register">
+      Register
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+
+<ion-content>
+
+<!--   <div padding>
+  </div>  -->
+
+  <div [ngSwitch]="user">
+    <ion-list *ngSwitchWhen="'login'" inset>
+      <ion-item>
+        <ion-label floating>Username</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+
+    <div padding>
+      <button block>Login</button>
+    </div>
+
+    <ion-item>
+        <ion-label>Or login with</ion-label>
+    </ion-item>
+
+    <div padding>
+      <button block>Facebook</button>
+    </div>
+
+    </ion-list>
+
+    <ion-list *ngSwitchWhen="'register'" inset>
+      <ion-item>
+        <ion-label floating>Username</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Mail</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+
+      <div padding>
+        <button block>Register</button>
+      </div>
+
+      <ion-item>
+          <ion-label>Or register with</ion-label>
+      </ion-item>
+
+      <div padding>
+        <button block>Facebook</button>
+      </div>
+
+
+    </ion-list>
+
+  </div>
+
+
+</ion-content>
