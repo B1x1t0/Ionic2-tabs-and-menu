@@ -13,7 +13,7 @@ import {LoginPage} from './pages/login/login';
 })
 class MyApp {
   // make HelloIonicPage the root (or first) page
-  rootPage: any = HelloIonicPage;
+  rootPage: any = TabsPage;
   pages: Array<{title: string, component: any}>;
 
   constructor(

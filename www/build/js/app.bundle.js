@@ -22,7 +22,7 @@ var MyApp = (function () {
         this.platform = platform;
         this.menu = menu;
         // make HelloIonicPage the root (or first) page
-        this.rootPage = hello_ionic_1.HelloIonicPage;
+        this.rootPage = tabs_1.TabsPage;
         this.initializeApp();
         // set our app's pages
         this.pages = [
@@ -55,6 +55,7 @@ var MyApp = (function () {
     ], MyApp);
     return MyApp;
 }());
+
 },{"./pages/hello-ionic/hello-ionic":2,"./pages/list/list":4,"./pages/login/login":5,"./pages/tabs/tabs":6,"es6-shim":250,"ionic-angular":326,"ionic-native":347}],2:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -79,6 +80,7 @@ var HelloIonicPage = (function () {
     return HelloIonicPage;
 }());
 exports.HelloIonicPage = HelloIonicPage;
+
 },{"ionic-angular":326}],3:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -106,6 +108,7 @@ var ItemDetailsPage = (function () {
     return ItemDetailsPage;
 }());
 exports.ItemDetailsPage = ItemDetailsPage;
+
 },{"ionic-angular":326}],4:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -149,6 +152,7 @@ var ListPage = (function () {
     return ListPage;
 }());
 exports.ListPage = ListPage;
+
 },{"../item-details/item-details":3,"ionic-angular":326}],5:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -176,6 +180,7 @@ var LoginPage = (function () {
     return LoginPage;
 }());
 exports.LoginPage = LoginPage;
+
 },{"ionic-angular":326}],6:[function(require,module,exports){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -206,6 +211,7 @@ var TabsPage = (function () {
     return TabsPage;
 }());
 exports.TabsPage = TabsPage;
+
 },{"../hello-ionic/hello-ionic":2,"../list/list":4,"../login/login":5,"ionic-angular":326}],7:[function(require,module,exports){
 'use strict';function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
